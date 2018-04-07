@@ -5,11 +5,7 @@
 %Manthan Mehta : 201501420
 
 
-function ground = applyHotCold(ground, ARMY_A1Pos, ARMY_A2Pos, ARMY_B1Pos, ARMY_B2Pos)
-% APPLYHOTCOLD return bar with hot and cold sites
-global ARMY_A1 ARMY_A2 ARMY_B1 ARMY_B2
-%Particular indices of the grid are set to the necessary temperature HOT OR
-%COLD
+function ground = applyPosition(ground, ARMY_A1Pos, ARMY_A2Pos, ARMY_B1Pos, ARMY_B2Pos)
 
 for k = 1:size(ARMY_A1Pos, 1)
     ground(ARMY_A1Pos(k, 1), ARMY_A1Pos(k, 2)) = ARMY_A1;
